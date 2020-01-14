@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Box from '../Components/card-box'
+import Square from '../Components/square'
 
 export default class Card extends Component {
 
