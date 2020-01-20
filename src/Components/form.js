@@ -21,10 +21,10 @@ export default class Form extends Component {
 
   render() {
     return (
-      <div>
-        <input type="text" className="form" ></input>
-        <button onClick={e => this.handleSubmit(e)}>Submit</button>
-      </div>
+      <form onClick={this.handleSubmit}>
+        <input type="text" value={this.state.boxes} onChange={this.handleChange}></input>
+        <input type="submit" value="Submit" />
+      </form>
     )
   }
 }
