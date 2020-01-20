@@ -8,6 +8,17 @@ export default class Form extends Component {
     }
   }
 
+  handleChange = e => {
+    this.setState({
+      boxes: e.target.value
+    });
+  }
+
+  handleSubmit = e => {
+    console.log(e.target.value);
+  }
+
+
   render() {
     return (
       <div>
