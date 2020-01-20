@@ -4,7 +4,7 @@ export default class Form extends Component {
   constructor() {
     super();
     this.state = {
-      boxes: null
+      boxes: ''
     }
   }
 
@@ -15,7 +15,8 @@ export default class Form extends Component {
   }
 
   handleSubmit = e => {
-    console.log(e.target.value);
+    e.preventDefault();
+    console.log(this.state.boxes);
   }
 
 
