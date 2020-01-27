@@ -1,15 +1,13 @@
 .grid {
   display: flex;                       /* establish flex container */
   flex-wrap: wrap;                     /* enable flex items to wrap */
-  justify-content: space-around;
-
+  width: 480px;
+  border: 1px solid black;
 }
 .cell {
-  flex: 0 0 32%;                       /* don't grow, don't shrink, width */
-  height: 50px;
-  margin-bottom: 5px;
-  background-color: #999;
-}
-.cell:nth-child(3n) {
-  background-color: #F00;
+  flex: 0 0 158px;                       /* don't grow, don't shrink, width */
+  height: 160px;
+  border: 1px solid black;
+  font-size: 50px;
+  text-align: center;
 }
