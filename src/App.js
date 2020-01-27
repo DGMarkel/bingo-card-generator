@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Card from './Containers/card'
 import Form from './Components/form'
 
-function App() {
+class App extends Component {
 
-  return (
-    <div className="App">
-      < Card />
-      <Form />
-    </div>
-  );
+  render() {
+    return (
+      <div className="App">
+        < Card />
+        <Form />
+      </div>
+    );
+};
 }
 
 export default App;
