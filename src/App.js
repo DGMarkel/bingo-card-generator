@@ -28,7 +28,7 @@ class App extends Component {
     return (
       <div className="App">
         < Card />
-        <Form handleChange={this.handleChange} handleSubmit={this.handleSubmit}/>
+        <Form handleChange={this.handleChange} handleSubmit={this.handleSubmit} words={this.state.words}/>
       </div>
     );
 };
