@@ -5,6 +5,12 @@ import Card from './Containers/card'
 import Form from './Components/form'
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      words: ''
+    }
+  }
 
   render() {
     return (
