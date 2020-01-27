@@ -27,7 +27,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        < Card />
+        < Card words={this.state.words}/>
         <Form handleChange={this.handleChange} handleSubmit={this.handleSubmit} words={this.state.words}/>
       </div>
     );
