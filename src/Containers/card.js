@@ -11,7 +11,15 @@ export default class Card extends Component {
   render () {
     return (
       <div className="grid">
-
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
+        <div className="cell"></div>
       </div>
     )
   }
