@@ -12,6 +12,18 @@ class App extends Component {
     }
   }
 
+  handleChange = e => {
+    this.setState({
+      words: e.target.value
+    });
+  }
+
+  handleSubmit = e => {
+    e.preventDefault();
+    console.log(this.state.words);
+  }
+
+
   render() {
     return (
       <div className="App">
