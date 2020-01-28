@@ -1,3 +1,11 @@
+.game {
+  float: right;
+}
+
+.controls {
+  float: left;
+}
+
 .grid {
   display: flex;                       /* establish flex container */
   flex-wrap: wrap;                     /* enable flex items to wrap */

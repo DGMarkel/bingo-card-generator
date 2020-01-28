@@ -30,7 +30,7 @@ class App extends Component {
   render() {
     console.log(this.state)
     return (
-      <div className="App">
+      <div className="app">
         <div className="game">
           < Card words={this.state.words} cells={this.state.cells}/>
         </div>
