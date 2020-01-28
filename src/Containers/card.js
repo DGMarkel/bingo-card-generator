@@ -3,8 +3,9 @@ import React, { Component } from 'react'
 export default class Card extends Component {
 
   createCells = () => {
+    const cells = parseInt(this.props.cells);
     let words = this.props.words.split(",");
-    return [...Array(this.props.cells).keys()].map( (cell, i) => <div className="cell">{ words[i] || ''}</div> );
+    return [...Array(cells).keys()].map( (cell, i) => <div className="cell">{ words[i] || ''}</div> );
   };
 
   render () {
