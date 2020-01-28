@@ -19,11 +19,11 @@ export default class Card extends Component {
   flexDimensions = (cells) => {
     switch(cells) {
       case 9:
-        return "flex-thirds"
+        return "grid-thirds"
       case 16:
-        return "flex-quarters"
+        return "grid-quarters"
       case 25:
-        return "flex-fifths"
+        return "grid-fifths"
     }
   }
 

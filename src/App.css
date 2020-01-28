@@ -19,27 +19,27 @@
   border-color: black;
 }
 
-.flex-thirds {  /* establishes dimensions for 3x3 bingo card */
+.grid-thirds {  /* establishes dimensions for 3x3 bingo card */
   width: 153px;
   height: 159px;
 }
 
-.flex-quarters {  /* establishes dimensions for 4x4 bingo card */
+.grid-quarters {  /* establishes dimensions for 4x4 bingo card */
   width: 24%;
   height: 25%;
 }
 
-.flex-fifths {  /* establishes dimensions for 5x5 bingo card */
+.grid-fifths {  /* establishes dimensions for 5x5 bingo card */
   width: 19%;
   height: 20%;
 }
 
-.flex-thirds:nth-child(3n+3), .flex-quarters:nth-child(4n+4), .flex-fifths:nth-child(5n+5) { /* sets right-hand  border for last cell in every row  */
+.grid-thirds:nth-child(3n+3), .grid-quarters:nth-child(4n+4), .grid-fifths:nth-child(5n+5) { /* sets right-hand  border for last cell in every row  */
   border-right: 1px solid black;
 }
 
 
 /* sets bottom border for every cell in bottom row of bingo card */
-.flex-thirds:nth-last-child(-n + 3), .flex-quarters:nth-last-child(-n + 4), .flex-fifths:nth-last-child(-n + 5) {
+.grid-thirds:nth-last-child(-n + 3), .grid-quarters:nth-last-child(-n + 4), .grid-fifths:nth-last-child(-n + 5) {
   border-bottom: 1px solid black;
 }
