@@ -9,7 +9,7 @@ class App extends Component {
     super(props)
     this.state = {
       words: '',
-      gridSize: 9,
+      cells: 9,
     }
   }
 
@@ -31,9 +31,9 @@ class App extends Component {
     console.log(this.state)
     return (
       <div className="App">
-        < Card words={this.state.words} gridSize={this.state.gridSize}/>
+        < Card words={this.state.words} cells={this.state.cells}/>
         <Form handleChange={this.handleChange} handleSubmit={this.handleSubmit} words={this.state.words}/>
-        <select name="gridSize" onChange={this.handleChange}>
+        <select name="cells" onChange={this.handleChange}>
           <option value="9">3x3</option>
           <option value="16">4x4</option>
           <option value="25">5x5</option>
