@@ -15,7 +15,7 @@ class App extends Component {
 
   handleChange = e => {
     const name = e.target.name;
-    const value = e.target.value;
+    const value = parseInt(e.target.value) || e.target.value; // converts value to integer if it is one
     this.setState({
       [name]: value
     });
