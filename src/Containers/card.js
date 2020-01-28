@@ -13,6 +13,9 @@ export default class Card extends Component {
     return [...Array(cells).keys()].map( (cell, i) => <div className={`cell ${this.flexDimensions(cells)}`}>{ words[i] || ''}</div> );
   };
 
+
+  // returns a className to define number of cells in grid
+  // takes cells as argument passed from generateGrid
   flexDimensions = (cells) => {
     switch(cells) {
       case 9:

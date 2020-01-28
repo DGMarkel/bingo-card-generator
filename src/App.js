@@ -31,13 +31,17 @@ class App extends Component {
     console.log(this.state)
     return (
       <div className="App">
-        < Card words={this.state.words} cells={this.state.cells}/>
-        <Form handleChange={this.handleChange} handleSubmit={this.handleSubmit} words={this.state.words}/>
-        <select name="cells" onChange={this.handleChange}>
-          <option value="9">3x3</option>
-          <option value="16">4x4</option>
-          <option value="25">5x5</option>
-        </select>
+        <div className="game">
+          < Card words={this.state.words} cells={this.state.cells}/>
+        </div>
+        <div className="controls">
+          <Form handleChange={this.handleChange} handleSubmit={this.handleSubmit} words={this.state.words}/>
+          <select name="cells" onChange={this.handleChange}>
+            <option value="9">3x3</option>
+            <option value="16">4x4</option>
+            <option value="25">5x5</option>
+          </select>
+        </div>
       </div>
     );
 };
