@@ -5,7 +5,7 @@ export default class Form extends Component {
   render() {
     return (
       <form onClick={this.props.handleSubmit}>
-        <textarea value={this.props.words} onChange={this.props.handleChange} />
+        <textarea name="words" value={this.props.words} onChange={this.props.handleChange} />
         <input type="submit" value="Submit" />
       </form>
     )
