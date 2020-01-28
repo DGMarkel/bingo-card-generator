@@ -13,8 +13,10 @@ class App extends Component {
   }
 
   handleChange = e => {
+    const name = e.target.name;
+    const value = e.target.value;
     this.setState({
-      words: e.target.value
+      [name]: value
     });
   }
 
