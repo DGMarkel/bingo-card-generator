@@ -2,8 +2,12 @@
   float: left;
 }
 
-.game {
+.game { /* sets styling for div containing sample bingo card */
   float: right;
+  margin: 50px;
+}
+
+.card { /* sets styling for card containing bingo grid */
 }
 
 .grid {

@@ -29,8 +29,10 @@ export default class Card extends Component {
 
   render () {
     return (
-      <div className="grid">
-        { this.generateGrid() }
+      <div className="card">
+        <div className="grid">
+          { this.generateGrid() }
+        </div>
       </div>
     )
   }
