@@ -28,10 +28,16 @@ class App extends Component {
 
 
   render() {
+    console.log(this.state)
     return (
       <div className="App">
         < Card words={this.state.words}/>
         <Form handleChange={this.handleChange} handleSubmit={this.handleSubmit} words={this.state.words}/>
+        <select name="gridSize" onChange={this.handleChange}>
+          <option value="3">3x3</option>
+          <option value="4">4x4</option>
+          <option value="5">5x5</option>
+        </select>
       </div>
     );
 };
