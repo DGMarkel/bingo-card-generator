@@ -2,6 +2,11 @@ import React, { Component } from 'react'
 
 export default class Card extends Component {
 
+  createCells = () => {
+    let words = this.props.words.split(",");
+    return [...Array(this.props.cells).keys()].map( (cell, i) => <div className="cell">{ words[i] || ''}</div> );
+  };
+
   render () {
     let words = this.props.words.split(",")
     return (
