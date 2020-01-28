@@ -2,12 +2,18 @@
   display: flex;                       /* establish flex container */
   flex-wrap: wrap;                     /* enable flex items to wrap */
   width: 480px;
-  border: 1px solid black;
+  height: 480px;
 }
+
 .cell {
-  flex: 0 0 158px;                       /* don't grow, don't shrink, width */
-  height: 160px;
-  border: 1px solid black;
-  font-size: 50px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border: 1px  solid black;
+  justify-content: space-between;
+}
+
+.flex-thirds {
+  display: block;
+  width: 32%;
+  height: 33%;
 }
