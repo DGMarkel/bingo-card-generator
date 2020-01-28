@@ -9,7 +9,7 @@ class App extends Component {
     super(props)
     this.state = {
       words: '',
-      gridSize: 3,
+      gridSize: 9,
     }
   }
 
@@ -34,9 +34,9 @@ class App extends Component {
         < Card words={this.state.words} gridSize={this.state.gridSize}/>
         <Form handleChange={this.handleChange} handleSubmit={this.handleSubmit} words={this.state.words}/>
         <select name="gridSize" onChange={this.handleChange}>
-          <option value="3">3x3</option>
-          <option value="4">4x4</option>
-          <option value="5">5x5</option>
+          <option value="9">3x3</option>
+          <option value="16">4x4</option>
+          <option value="25">5x5</option>
         </select>
       </div>
     );
