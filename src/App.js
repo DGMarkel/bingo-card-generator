@@ -31,7 +31,7 @@ class App extends Component {
     console.log(this.state)
     return (
       <div className="App">
-        < Card words={this.state.words}/>
+        < Card words={this.state.words} gridSize={this.state.gridSize}/>
         <Form handleChange={this.handleChange} handleSubmit={this.handleSubmit} words={this.state.words}/>
         <select name="gridSize" onChange={this.handleChange}>
           <option value="3">3x3</option>
