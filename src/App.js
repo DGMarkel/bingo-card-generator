@@ -33,7 +33,7 @@ class App extends Component {
     return (
       <div className="app">
         <div className="game">
-          < Card cardTitle={this.state.cardTitle"} words={this.state.words} cells={this.state.cells}/>
+          < Card cardTitle={this.state.cardTitle} words={this.state.words} cells={this.state.cells}/>
         </div>
         <div className="controls">
           <Form handleChange={this.handleChange} handleSubmit={this.handleSubmit} words={this.state.words}/>

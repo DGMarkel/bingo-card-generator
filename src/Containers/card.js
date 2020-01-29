@@ -30,7 +30,7 @@ export default class Card extends Component {
   render () {
     return (
       <div className="card">
-        <div className="card-title">BINGO</div>
+        <div className="card-title">{this.props.cardTitle.toUpperCase()}</div>
         <div className="grid">
           { this.generateGrid() }
         </div>
