@@ -8,6 +8,7 @@
 
 .card { /* sets styling for card containing bingo grid */
   border: 1px solid black;
+  border-radius: 10px;
   width: 560px;
   height: 700px;
   margin: 100px;
