@@ -25,28 +25,32 @@
   flex-wrap: wrap;                     /* enable flex items to wrap */
   width: 480px;
   height: 480px;
-  margin: 180px auto 0 auto;
+  margin: 180px auto 0 auto; /* aligns grid within the card */
 }
 
-.cell {                             /*sets borders for top and left sides of cells */
+.cell {   /*sets borders for top and left sides of cells */
   border-width: 1px 0 0 1px;
   border-style: solid;
   border-color: black;
+  text-align: center; /* centers content of cell horizontally */
 }
 
 .grid-thirds {  /* establishes dimensions for 3x3 bingo card */
   width: 158px;
   height: 158px;
+  line-height: 158px; /* centers content of cell vertically */
 }
 
 .grid-quarters {  /* establishes dimensions for 4x4 bingo card */
   width: 118px;
   height: 118px;
+  line-height: 118px; /* centers content of cell vertically */
 }
 
 .grid-fifths {  /* establishes dimensions for 5x5 bingo card */
   width: 94px;
   height: 94px;
+  line-height: 94px;  /* centers content of cell vertically */
 }
 
 .grid-thirds:nth-child(3n+3), .grid-quarters:nth-child(4n+4), .grid-fifths:nth-child(5n+5) { /* sets right-hand  border for last cell in every row  */
