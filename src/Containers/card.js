@@ -10,7 +10,7 @@ export default class Card extends Component {
   generateGrid = () => {
     const cells = parseInt(this.props.cells);
     let words = this.props.words.split(",");
-    return [...Array(cells).keys()].map( (cell, i) => <div className={`cell ${this.flexDimensions(cells)}`}><p className="center">{ words[i] || ''}</p></div> );
+    return [...Array(cells).keys()].map( (cell, i) => <div className={`cell ${this.flexDimensions(cells)}`}><p>{ words[i] || ''}</p></div> );
   };
 
 
