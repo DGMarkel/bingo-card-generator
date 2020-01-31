@@ -1,5 +1,5 @@
 .controls {
-  float: left;
+  float: right;
 }
 
 .game { /* sets styling for div containing sample bingo card */
@@ -33,7 +33,7 @@
   border-style: solid;
   border-color: black;
   text-align: center; /* centers content of cell horizontally */
-  overflow: hidden;
+  overflow: hidden; /* hides overflowing text*/
 }
 
 .cell p {
@@ -43,17 +43,17 @@
 
 .grid-thirds {  /* establishes dimensions for 3x3 bingo card */
   width: 158px;
-  height: 158px;
+  height: 159px;
 }
 
 .grid-quarters {  /* establishes dimensions for 4x4 bingo card */
   width: 118px;
-  height: 118px;
+  height: 119px;
 }
 
 .grid-fifths {  /* establishes dimensions for 5x5 bingo card */
   width: 94px;
-  height: 94px;
+  height: 95px;
 }
 
 .grid-thirds:nth-child(3n+3), .grid-quarters:nth-child(4n+4), .grid-fifths:nth-child(5n+5) { /* sets right-hand  border for last cell in every row  */
