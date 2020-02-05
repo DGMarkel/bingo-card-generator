@@ -9,7 +9,7 @@ class App extends Component {
     super(props)
     this.state = {
       cardTitle: 'BINGO',
-      words: '',
+      filledCells: '',
       cells: 9,
     }
   }
@@ -40,10 +40,10 @@ class App extends Component {
     return (
       <div className="app">
         <div className="game">
-          < Card cardTitle={this.state.cardTitle} words={this.state.words} cells={this.state.cells}/>
+          < Card cardTitle={this.state.cardTitle} filledCells={this.state.filledCells} cells={this.state.cells}/>
         </div>
         <div className="controls">
-          <Form handleChange={this.handleChange} handleSubmit={this.handleSubmit} words={this.state.words}/>
+          <Form handleChange={this.handleChange} handleSubmit={this.handleSubmit} filledCells={this.state.filledCells}/>
           <select name="cells" onChange={this.handleChange}>
             <option value="9">3x3</option>
             <option value="16">4x4</option>
