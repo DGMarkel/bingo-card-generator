@@ -30,9 +30,14 @@ class App extends Component {
   defaultGame = () => {
     this.setState({
       cardTitle: 'BINGO',
-      filledCells: [...Array(this.state.cells)].map(()=>Math.floor(Math.random()*75)).map(int=>++int),
+      filledCells: this.populateCellsWithNumbers(),
       cells: 25
     })
+  }
+
+  populateCellsWithNumbers = () => {
+    // need to update this method so that vertical rows don't contain repeated numbers and the center tile contains the word free
+    return [...Array(this.state.cells)].map(()=>Math.floor(Math.random()*75)).map(int=>++int) // populates cells with
   }
 
   componentDidMount() {
