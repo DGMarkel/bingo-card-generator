@@ -22,14 +22,13 @@ class App extends Component {
     });
   }
 
+  // Currently unused -- keep it for now, not sure if I need it
   handleSubmit = e => {
     e.preventDefault();
-    console.log(this.state.words);
   }
 
 
   render() {
-    console.log(this.state)
     return (
       <div className="app">
         <div className="game">
