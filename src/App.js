@@ -27,6 +27,14 @@ class App extends Component {
     e.preventDefault();
   }
 
+  defaultGame = () => {
+    this.setState({
+      cardTitle: 'BINGO',
+      filledCells: [...Array(parseInt(25))].map(()=>Math.floor(Math.random()*75)),
+      cells: 25
+    })
+  }
+
 
   render() {
     return (
