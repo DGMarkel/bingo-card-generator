@@ -8,8 +8,9 @@ export default class Card extends Component {
   */
 
   generateGrid = () => {
+    console.log(this.props)
     const cells = parseInt(this.props.cells);
-    let filledCells = this.props.filledCells.split(",");
+    let filledCells = Array.isArray(this.props.filledCells) ? this.props.filledCells : this.props.filledCells.split(",");
     return [...Array(cells).keys()].map( (cell, i) => <div className={`cell ${this.flexDimensions(cells)}`}><p>{ filledCells[i] || ''}</p></div> );
   };
 

@@ -30,9 +30,13 @@ class App extends Component {
   defaultGame = () => {
     this.setState({
       cardTitle: 'BINGO',
-      filledCells: [...Array(parseInt(25))].map(()=>Math.floor(Math.random()*75)),
+      filledCells: [...Array(25)].map(()=>Math.floor(Math.random()*75)),
       cells: 25
     })
+  }
+
+  componentDidMount() {
+    this.defaultGame();
   }
 
 
